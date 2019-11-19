@@ -4,7 +4,7 @@ function QueryDatabase($query)
 {
     static $database = null;
     if ($database === null) {
-        $database = mysqli_connect("localhost", "", "", "erasmus");
+        $database = mysqli_connect("localhost", "root", "", "erasmus");
 
         if ($database === false) {
             echo json_encode(array("ERROR_CODE" => "0003", "info" => mysqli_connect_error()));
@@ -53,7 +53,4 @@ function VerifyToken($token, $update = true)
         my_log('verifyToken ' . "ERROR_CODE 0001", 2, __FILE__, __LINE__);
         exit;
     }
-}
-foreach ($variable as $key => $value) {
-    # code...
 }

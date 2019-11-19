@@ -4,12 +4,21 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 <body style="background-color:#343a40;">
-
+        <nav class="navbar navbar-dark bg-dark">
+                <form class="form-inline">
+                        <button type="button" class="btn btn-outline-success" data-toggle="modal" data-target="#TEST">
+                               Login
+                              </button>
+                              
+                              
+                  <button class="btn btn-sm btn-outline-secondary"data-toggle="modal" data-target="#DRUGI" type="button">Sign Up</button>
+                </form>
+              </nav>
 <table class="table table-borderless table-dark">
 
     <thead>
       <tr>
-        <th scope="col">#</th>
+       
         <th scope="col">Date</th>
         <th scope="col">Name</th>
         <th scope="col">Status</th>
@@ -19,7 +28,7 @@
     </thead>
     <tbody>
       <tr>
-        <th scope="row">1</th>
+        
         <td>15.07.2020</td>
         <td>Ultimate Race</td>
         <td>Closed</td>
@@ -27,7 +36,7 @@
         <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">det</button></td>
       </tr>
       <tr>
-        <th scope="row">2</th>
+        
         <td>20.09.2020</td>
         <td>Love Run</td>
         <td>Closed</td>
@@ -36,7 +45,7 @@
 
       </tr>
       <tr>
-        <th scope="row">3</th>
+        
         <td >12.11.2020</td>
         <td>21th London Marathon</td>
         <td>Open</td>
@@ -45,7 +54,7 @@
 
       </tr>
       <tr>
-        <th scope="row">4</th>
+        
         <td>03.12.2020</td>
         <td>Hardcore Run</td>
         <td>Open</td>
@@ -57,22 +66,81 @@
   </table>
   </body>
 
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog" role="document">
+  
+      
+      
+      <div class="modal fade" id="TEST" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
             </div>
             <div class="modal-body">
-              ...
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+                    <form>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputPassword1">Password</label>
+                              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                          </form>
             </div>
           </div>
         </div>
       </div>
+
+      <div class="modal fade" id="DRUGI" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalCenterTitle">Login</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                        <form>
+                                <div class="form-row">
+                                  <div class="form-group col-md-6">
+                                    <label for="inputEmail4">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="Email">
+                                  </div>
+                                  <div class="form-group col-md-6">
+                                    <label for="inputPassword4">Password</label>
+                                    <input type="password" class="form-control" id="password" placeholder="Password">
+                                  </div>
+                                </div>
+                                <div class="form-group">
+                                  <label for="inputAddress">Name</label>
+                                  <input type="text" class="form-control" id="name">
+                                </div>
+                                <div class="form-row">
+                                  <div class="form-group col-md-4">
+                                    <label for="inputState">Gender</label>
+                                    <select id="inputState" class="form-control">
+                                      <option selected>Male</option>
+                                      <option>Female</option>
+                                    </select>
+                                  </div>
+                                  <div class="form-group col-md-2">
+                                    <label for="inputZip">Age</label>
+                                    <input type="number" class="form-control" id="age">
+                                  </div>
+                                </div>
+                               
+                                
+                                <button type="submit" class="btn btn-primary">Sign in</button>
+                              </form>
+                </div>
+                
+              </div>
+            </div>
+          </div>

@@ -17,6 +17,8 @@ echo "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/
         <th scope='col'>Status</th>
         <th scope='col'>Localization</th>
         <th scope='col'>Details</th>
+        <th scope='col'>Race Signup</th>
+
       </tr>
     </thead>
     <tbody>";
@@ -31,6 +33,8 @@ echo "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/
 
         echo " <td>".$value["localization"]."</td>";
         echo " <td>det</td>";
+        echo " <td>det</td>";
+
         echo"</tr>";
 
     }

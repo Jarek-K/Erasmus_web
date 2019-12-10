@@ -2,27 +2,20 @@
 include_once "./Common.php";
 
 
-$user = mysqli_fetch_assoc(QueryDatabase("SELECT id from users where email = '".$_POST['email']."'"));
+$user = mysqli_fetch_assoc(QueryDatabase("SELECT id from users where email = '" . $_POST['email'] . "'"));
 
-if(isset($user[id]))
-{
+if (isset($user['id'])) {
     echo "F";
-
-}
-else
-{
-    if(password_verify($_POST["password"], $user['password']))
-    {
+} else {
+    if (password_verify($_POST["password"], $user['password'])) {
         session_start();
-        $token = random_int(1000,9999).random_int(1000,9999).random_int(1000,9999).random_int(1000,9999)."TOK";
+        $token = random_int(1000, 9999) . random_int(1000, 9999) . random_int(1000, 9999) . random_int(1000, 9999) . "TOK";
         QueryDatabase("INSERT into users ('name','email','password','age','gender','role') values  ");
 
 
-        QueryDatabase("DELETE from token where user = ".$user['id']);
-        QueryDatabase("INSERT into token ('token','user') values '$token', ".$user['id']);
+        QueryDatabase("DELETE from token where user = " . $user['id']);
+        QueryDatabase("INSERT into token ('token','user') values '$token', " . $user['id']);
         $_SESSION["token"] = $token;
-        header('Location: '."127.0.0.1/ERSMS/RacesList.php");
-
+        header('Location: ' . __DIR__ . "/RacesList.php");
     }
 }
-

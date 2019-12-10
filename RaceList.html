@@ -15,7 +15,7 @@
                 </form>
               </nav>
 <table class="table table-borderless table-dark">
-
+  <button type="button" class="btn btn-outline-light">Race history</button>
     <thead>
       <tr>
        
@@ -24,6 +24,7 @@
         <th scope="col">Status</th>
         <th scope="col">Localization</th>
         <th scope="col">Details</th>
+        <th scope="col">Race Sing up</th>
       </tr>
     </thead>
     <tbody>
@@ -33,7 +34,8 @@
         <td>Ultimate Race</td>
         <td>Closed</td>
         <td>Warsaw</td>
-        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">det</button></td>
+        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#DET">det</button></td>
+        <td><button type="button" class="btn btn-success">Sign up for race</button>
       </tr>
       <tr>
         
@@ -41,7 +43,8 @@
         <td>Love Run</td>
         <td>Closed</td>
         <td>Madrid</td>
-        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">det</button></td>
+        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#DET">det</button></td>
+        <td><button type="button" class="btn btn-success">Sign up for race</button>
 
       </tr>
       <tr>
@@ -50,7 +53,8 @@
         <td>21th London Marathon</td>
         <td>Open</td>
         <td>London</td>
-        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">det</button></td>
+        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#DET">det</button></td>
+        <td><button type="button" class="btn btn-success">Sign up for race</button>
 
       </tr>
       <tr>
@@ -59,8 +63,8 @@
         <td>Hardcore Run</td>
         <td>Open</td>
         <td>New York</td>
-        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">det</button></td>
-
+        <td><button type="button" class="btn btn-primary" data-toggle="modal" data-target="#DET">det</button></td>
+        <td><button type="button" class="btn btn-success">Sign up for race</button></td>
       </tr>
     </tbody>
   </table>
@@ -140,7 +144,15 @@
                                 <button type="submit" class="btn btn-primary">Sign in</button>
                               </form>
                 </div>
-                
+
               </div>
             </div>
           </div>
+
+<div class="modal fade bd-example-modal-sm" id="DET" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      Place for details
+    </div>
+  </div>
+</div>

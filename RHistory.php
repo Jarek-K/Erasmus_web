@@ -30,7 +30,7 @@ echo "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/
         echo " <td>".$value["race_date"]."</td>";
         echo " <td>".$value["status"]."</td>";
         echo " <td>".$value["localization"]."</td>";
-        echo " <td>det</td>";
+        echo " <td> det </td>";
         echo " <td> Delete race </td>";
         echo"</tr>";
 

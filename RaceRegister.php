@@ -1,5 +1,5 @@
 <?php
-include_once "./Common.php";
+include_once  "./Common.php";
 
 $uerId = VerifyToken($_SESSION['token']);
 

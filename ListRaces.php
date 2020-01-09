@@ -22,7 +22,7 @@ echo "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/
       </tr>
     </thead>
     <tbody>";
-    $races = mysqli_fetch_all(QueryDatabase("SELECT * from races where status IN ('OPEN','FULL') "),MYSQLI_ASSOC); // array(array("localizations"=>"Madrid","status"=>"OPEN"),array("localizations"=>"Paris","status"=>"OPEN"));
+    $races = mysqli_fetch_all(QueryDatabase ("SELECT * from races where status IN ('OPEN','FULL') "),MYSQLI_ASSOC); // array(array("localizations"=>"Madrid","status"=>"OPEN"),array("localizations"=>"Paris","status"=>"OPEN"));
 
    
     foreach ($races as $key => $value) {

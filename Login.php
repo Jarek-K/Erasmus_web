@@ -6,7 +6,7 @@ $user = mysqli_fetch_assoc(QueryDatabase("SELECT id , password from users where 
 
 if(isset($user['id']))
 {
-    if(password_verify($_POST["password"], $user['password']))
+    if (password_verify($_POST["password"], $user['password']))
     {
         session_start();
         $token = random_int(1000,9999).random_int(1000,9999).random_int(1000,9999).random_int(1000,9999)."TOK";

@@ -39,7 +39,7 @@ echo "<link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/
 
     }
 
-    echo "  </tbody>
+    echo "   </tbody>
     </table>
     </body>";
 
